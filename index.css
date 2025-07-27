@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+/* ---------------Navbar styling----------------------------------------------------- */
+#navBar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px;
+    
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+.nav1{
+    padding: 10px;
+}
+.nav2{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.nav2 .odin_img{
+    width: 300px;
+    vertical-align: middle;
+}
+/* ---------------------------------------------------------------------------------- */
+
+.myLogo{
+    /* display: block; */
+    margin: 0 auto;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.food_img{
+    height: 400px;
+    width: 400px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+
+    transition: transform 0.5s ease;
+}
+.food_img:hover{
+    transform: scale(1.05);
+}
+
+h1{
+    font-family: cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+
+p, li{
+    font-size: 2rem;
+}
+
+ul{
+    display: flex;
+    /* margin: 10px; */
+}
+
+li{
+    flex: 1;
+    list-style-type: none;
+    text-align: center;
+}

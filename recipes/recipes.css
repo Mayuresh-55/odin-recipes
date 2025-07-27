@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+/* ---------------Navbar styling----------------------------------------------------- */
+#navBar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 10px;
+
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+.nav1{
+    padding: 10px;
+}
+.nav2{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.nav2 .odin_img{
+    width: 300px;
+    vertical-align: middle;
+}
+/* ---------------------------------------------------------------------------------- */
+/* extra styling to set box shadow to none */
+.odin_img{
+    box-shadow: none;
+}
+
+.myLogo{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+
+    transition: transform 0.5s ease;
+}
+.myLogo:hover{
+    transform: scale(1.05);
+}
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.hr-white{
+    border: none;
+    border: 2px solid #fff;
+}
+.hr-black{
+    border: none;
+    border: 2px solid #000;
+}
+
+img{
+    box-shadow: 0 0 8px rgba(0, 0, 0, 1);
+    border-radius: 15px;
+}
+
+.img-container{
+    text-align: center;
+}
+
+h1{
+    font-family:cursive;
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+strong{
+    text-decoration: underline;
+}
+
+p, li{
+    font-size: 1.4rem;
+}
+
+ul li{ 
+    list-style-type: square;
+}
+
+.col3{
+    display: flex;
+}
+
+.column{
+    flex: 1;
+    border: 3px solid;
+    padding: 10px;
+}
