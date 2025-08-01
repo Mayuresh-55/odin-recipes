@@ -1,6 +1,8 @@
 *{
     box-sizing: border-box;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin: 0;
+    padding: 0;
 }
 
 /* ---------------Navbar styling----------------------------------------------------- */
@@ -8,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 10px;
     
     border: none;
@@ -45,8 +47,8 @@
 }
 
 .food_img{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
     border-radius: 15px;
 
@@ -68,11 +70,66 @@ p, li{
 
 ul{
     display: flex;
-    /* margin: 10px; */
+    gap: 10px;
+    margin-top: 30px;
+    justify-content: space-evenly;
 }
 
 li{
-    flex: 1;
+    /* flex: 1; */
     list-style-type: none;
     text-align: center;
+}
+
+@media (max-width: 767px) {
+  #navBar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+    margin-top: 0;
+    border-radius: none;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .hide-on-mobile {
+    display: none;
+  }
+
+  .nav2 {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav2 p {
+    margin: 0;
+  }
+
+  .odin_img {
+    width: 200px; 
+  }
+
+  .myLogo {
+    width: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  li {
+    width: 100%; 
+    margin-bottom: 20px;
+  }
+
+  .food_img {
+    width: 80%; 
+    height: auto; 
+    max-width: 400px;
+  }
 }
