@@ -1,6 +1,8 @@
 *{
     box-sizing: border-box;
-    margin-top: 20px;
+    /* margin-top: 20px; */
+    margin: 0;
+    padding: 0;
 }
 
 /* ---------------Navbar styling----------------------------------------------------- */
@@ -8,9 +10,9 @@
     display: flex;
     justify-content: space-between;
     max-width: 1300px;
-    margin: 0 auto;
+    margin: 30px auto;
     padding: 10px;
-
+    
     border: none;
     border-radius: 15px;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
@@ -64,10 +66,15 @@
 img{
     box-shadow: 0 0 8px rgba(0, 0, 0, 1);
     border-radius: 15px;
+
+    margin-block: 30px;
 }
 
 .img-container{
     text-align: center;
+}
+div.img-container > div{
+    margin-block: 20px;
 }
 
 h1{
@@ -90,6 +97,7 @@ p, li{
 
 ul li{ 
     list-style-type: square;
+    list-style-position: inside;
 }
 
 .col3{
@@ -98,6 +106,98 @@ ul li{
 
 .column{
     flex: 1;
-    border: 3px solid;
+    /* border: 3px solid; */
     padding: 10px;
+}
+
+.mobile-hr-black{
+    border: 1px solid #000;
+}
+.mobile-hr-white{
+    border: 1px solid #fff;
+}
+
+.steps-to-make > li{
+    list-style-position: inside;
+    margin-block: 15px;
+}
+.steps-to-make > li::marker{
+    font-weight: bold;
+}
+
+/* --------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 568px) {
+    *{
+        margin: 0 auto;
+        max-width: 600px;
+    }
+
+    #navBar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+
+        margin-top: 0;
+        border-radius: none;
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .nav2 {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .nav2 p {
+        margin: 0;
+    }
+
+    .odin_img {
+    width: 200px; 
+    }
+
+    .myLogo {
+    width: 120px;
+    }
+
+    .col3{
+        flex-direction: column;
+    }
+
+    .gulab-jamun{
+        width: 70%;
+    }
+    .sandwich{
+        width: 70%;
+    }
+
+    hr.mobile-hr-black{
+        border: 4px solid #000;
+        border-radius: 50%;
+    }
+    hr.mobile-hr-white{
+        border: 4px solid #fff;
+        border-radius: 50%;
+    }
+
+    hr.hr-black{
+        display: none;
+    }
+    hr.hr-white{
+    display: none;
+    }
+}
+
+@media (max-width: 430px){
+    *{
+        margin-inline: 5px;
+    }
+
+
 }
